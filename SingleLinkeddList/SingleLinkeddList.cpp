@@ -48,6 +48,7 @@ void addNode() {
 	nodeBaru->next = current;
 	previous->next = nodeBaru;
 }
+
 bool deleteNode(int nim) {
 	Node* current = START;
 	Node* previous = START;
@@ -58,3 +59,12 @@ bool deleteNode(int nim) {
 		START = current->next;
 	return true;
 }
+
+bool listEmpty() {
+	if (START == NULL)
+		return true;
+	else
+		return false;
+
+}
+
